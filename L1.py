@@ -20,15 +20,15 @@ def twoSum(nums, target):
     n = len(nums)
     # 创建一个空字典
     d = {}
-    for x in range(n):
-        a = target - nums[x]
+    for i in range(n):
+        a = target - nums[i]
         # 字典d中存在nums[x]时
-        if nums[x] in d:
-            return d[nums[x]], x
+        if nums[i] in d:
+            return d[nums[i]], i
         # 否则往字典增加键/值对
         else:
-            d[a] = x
+            d[a] = i
 
 if __name__ == '__main__':
-    L = [3,3]
-    print(twoSum1(L,6))
+    L = [2,3,2,1]
+    print(twoSum(L,4))

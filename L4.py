@@ -16,7 +16,7 @@ class Solution():
             rev = rev * 10 + res
         return flag*rev
 if __name__ == '__main__':
-    x = -321321421
+    x = int(input())
     s = Solution()
     print(s.reverse(x))
 
